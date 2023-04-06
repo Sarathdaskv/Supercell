@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="icon" type="image/x-icon" href="/supercell/images/supercell.png">
+  <title>Supercell</title>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="frontpage ">
+
+    <div class="container-md  fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid bg-transparent">
+          <a class="navbar-brand" href="#">
+            <img src="images/supercell_logo.jpg" alt="" width="50" height="50" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler bg-transparent " type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <ion-icon name="menu" style="color: white;" onclick="clickable(this)"></ion-icon>
+          </button>
+
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item ">
+                <a class="nav-link mx-2" href="#" style="color: gray;">Games</a>
+              </li>
+              <li class="nav-item links mx-2 ">
+                <a class="nav-link" href="#" style="color: gray;">Careers</a>
+              </li>
+              <li class="nav-item links mx-2">
+                <a class="nav-link" href="#" style="color: gray;">Support</a>
+              </li>
+              <li class="nav-item links ">
+                <a class="nav-link links" href="#" style="color: gray;">About Us</a>
+              </li>
+            </ul>
+
+
+            <div class="navbar-nav icons ms-auto ">
+              <a class="nav-item nav-link  mx-2  d-inline-flex" href="#"><img src="images/creators.svg" alt=""
+                  width="30" height="30" class="d-inline-block align-text-top"></a>
+              <a class="nav-item nav-link mx-2  d-inline-flex" href="#"><img src="images/media.svg" alt="" width="30"
+                  height="30" class="d-inline-block align-text-top"></a>
+              <a class="nav-item nav-link mx-3  d-inline-flex" href="#"><img src="images/id.svg" alt="" width="30"
+                  height="30" class="d-inline-block align-text-top"></a>
+            </div>
+            <button class="btn searchbtn pt-4 pb-4 ps-4 border-start" type="button">
+              <img src="images/icons8-search-30.svg" style=" width: 20px; height: 20px;">
+            </button>
+
+            <!-- mobile view -->
+            <div class="mobilecontainer  ">
+              <ul class="navdop" style="color: #ccc; list-style: none; height: 80vh;">
+                <li>
+                  <h3>Games&nbsp;<img src="images/icons8-chevron-24.png" alt="" style="width: 10px;"></h3>
+                </li>
+                <li>
+                  <h3>Careers&nbsp;<img src="images/icons8-chevron-24.png" alt="" style="width: 10px;"></h3>
+                </li>
+                <li>
+                  <h3>Support&nbsp;<img src="images/icons8-chevron-24.png" alt="" style="width: 10px;"></h3>
+                </li>
+                <li>
+                  <h3>About Us&nbsp;<img src="images/icons8-chevron-24.png" alt="" style="width: 10px;"></h3>
+                </li>
+                <li class="d-flex">
+                  <a href=""><img src="images/icons8-search-30.svg" alt="" height="20px" width="20px"
+                      style="text-decoration: none;"></a>
+                  <h6 class="text-center ">&nbsp;Search</h6>
+                </li>
+
+
+              </ul>
+
+              <!-- <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br> -->
+              <div class="mobileicons ">
+                <a href="" class="mx-3"><img src="images/creators.svg" height="30px" width="30px" alt=""></a>
+                <a href="" class="mx-3"><img src="images/media.svg" height="30px" width="30px" alt=""></a>
+                <a href="" class="mx-3"><img src="images/id.svg" height="30px" width="30px" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="color-overlay  d-flex justify-content-center align-items-center flex-column ">
+      <h1 class="fw-bold  mb-2" company>SUPERCELL</h1>
+      <p class="fw-normal w-50 text-center mb-3 mb-lg-4">Makers of Hay Day, Clash of Clans, Boom Beach, Clash Royale and
+        Brawl Stars.</p>
+      <a href="" class="btn rounded-pill pe-3 py-2 bg-primary mt-2 text-white fw-bold  qwer">&nbsp;<img
+          src="images/down.png" alt="" style="width: 25px;" class="ps-1 pe-2">&nbsp;SEE LATEST</a>
+    </div>
+  </div>
+  <br>
+  <div class="container  ">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card border-0">
+          <img src="images/gdc.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center cardheading fw-bold">NEWS</h5>
+            <p class="card-text text-center cardp fw-bold">Looking Forward to Meeting You</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card  border-0">
+          <img src="images/meet.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title  text-center cardheading fw-bold">CAREERS</h5>
+            <p class="card-text text-center cardp fw-bold">The Clash of Clans Team Welcomes You</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card border-0">
+          <img src="images/clashhorizon.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center cardheading fw-bold">ILKKA'S</h5>
+            <p class="card-text text-center cardp fw-bold">The Next Chapter of Supercell</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card  border-0">
+          <img src="images/everdale.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title  text-center cardheading fw-bold">NEWS</h5>
+            <p class="card-text text-center cardp fw-bold">Everdale’s story continues, thanks to Metacore</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card border-0">
+          <img src="images/brawlwc.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center cardheading fw-bold">NEWS</h5>
+            <p class="card-text text-center cardp fw-bold">The Brawl Stars World Finals Are Over, and We Have a Winner!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="card  border-0">
+          <img src="images/booksofclash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title  text-center cardheading fw-bold">NEWS</h5>
+            <p class="card-text text-center cardp fw-bold">Introducing the Books of Clash!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="text-center mb-4">
+      <button type="button" class="btn btn-primary fw-bold px-3" style=" font-size: 14px;">NEWS ARCHIVE</button>
+    </div>
+
+  </div>
+  <div class="nita ">
+    <div class="container pt-4">
+      <div class="row nitarow   align-items-center justify-content-center ">
+        <div class="  col-md-6  ">
+          <h3 class="fw-bold " style="font-size: 30px;color:white">GAMES</h3>
+
+          <p style="font-size: 14px;color:white" class="">Our dream is to create games that as many people as possible
+            play for years and that are remembered forever.</p>
+          <div class="d-flex rand">
+            <a href="#" class="btn btn-light btn-md p-3 fw-bold ">SEE GAMES</a>
+          </div>
+        </div>
+        <div class=" col-md-6  img-fluid ">
+          <img src="images/nita.jpg" style="width: 85%;" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="nita1 mb-5 ">
+    <div class="container pt-4">
+      <div class="row nitarow2  align-items-center justify-content-center ">
+        <div class=" col-md-6  img-fluid ">
+          <img src="images/miniPekka.jpg" style="width: 85%;" alt="">
+        </div>
+        <div class="  col-md-6  ">
+          <h3 class="fw-bold " style="font-size: 30px;color:white">CAREERS</h3>
+
+          <p style="font-size: 14px;color:white" class="">Join us to create games that excite and help our players
+            around the world make memories. </p>
+          <div class="d-flex rand">
+            <a href="#" class="btn btn-light btn-md p-3 fw-bold ">SEE CAREERS</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- slider -->
+
+  <div class="container mb-4 ">
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner ">
+        <div class="carousel-item active ">
+          <div class="card-wrapper  d-flex  ">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="card border-0 me-2">
+                <img src="images/news_mobilegamer.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title   fw-bold">Supercell dodged ‘the great resignation’, but it’s doubling down on
+                    staff wellbeing anyway</h5>
+                  <p class="card-text  text-start ">“We work with a company who did a whole bunch of
+                    training to increase awareness of mental health and also reduce the stigma,” says Mansford. “If
+                    people aren’t talking about it, then that’s a problem in itself.” Staff can ask to be trained like
+                    mental health first aiders under a program called ‘Jedis of the mind’, and in Helsinki there’s a
+                    psychologist on-site twice a week. There are a raft of other training and online resources for staff
+                    who want to learn more in a less public way as well.</p>
+                  <a href="#" style="text-decoration: none;">READ ARTICLE <img
+                      src="images/icons8-speed-forward-arrow-68.png" width="10px" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="card border-0">
+                <img src="images/news_pocketgamer.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title   fw-bold">Supercell talks breaking the mould of puzzle games with Clash Quest
+                  </h5>
+                  <p class="card-text  text-start ">"In my experience, whenever you change some design fundamentals, the
+                    whole game needs to be built in a different way. I don’t think many players will notice these
+                    differences, but they can have a big impact on how the game needs to be built.”</p>
+                  <a href="#" style="text-decoration: none;">READ ARTICLE <img
+                      src="images/icons8-speed-forward-arrow-68.png" width="10px" alt=""></a>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="card-wrapper d-flex ">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="card border-0 me-2">
+                <img src="images/news_venturebeat.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title   fw-bold">Supercell CEO thrives on trusting the instincts of game developers
+                  </h5>
+                  <p class="card-text  text-start ">Our threshold for releasing anything to beta should be low, but our
+                    bar for releasing anything globally should be high. But one way to fail as a company would be you
+                    paralyze yourself. Nothing is ever good enough and you don’t put anything out. One thing we
+                    fundamentally believe in is that how we ultimately achieve the best quality is we learn as quickly
+                    as possible. If you never ship anything to real players, you never learn, and you never achieve
+                    ultimate quality.</p>
+                  <a href="#" style="text-decoration: none;">READ ARTICLE <img
+                      src="images/icons8-speed-forward-arrow-68.png" width="10px" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="card border-0 ">
+                <img src="images/news_gamasutra.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title   fw-bold">Less management, more success - Inside Supercell's upside-down
+                    organization
+                  </h5>
+                  <p class="card-text  text-start ">There is no greenlight process from management, no milestone
+                    meetings where teams need to justify their project’s existence to finance. Teams can kill their
+                    games and move on if deemed necessary. All creative decisions are up to the teams. So the role of
+                    management in an upside structure? Build great teams, and support them in their efforts in order to
+                    facilitate their success.</p>
+                  <a href="#" style="text-decoration: none;">READ ARTICLE <img
+                      src="images/icons8-speed-forward-arrow-68.png" width="10px" alt=""></a>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card-wrapper d-flex ">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="card border-0 me-2">
+                <img src="images/news_gamesindustry.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title   fw-bold">What happens when you turn a studio upside down?</h5>
+                  <p class="card-text  text-start ">"I kept looking for approval. I kept going, 'Well, if I tell the
+                    game lead and he says it's okay then maybe it's okay,' and he was just like, 'Ah, do whatever, it's
+                    fine.' So I said, 'Well if I talk to 50% of the people on the team and they all say it's fine,' and
+                    I kept looking. 'What is the threshold for this is okay to do?' And the answer was, 'If you think
+                    it's the right thing to do, then do it, but also own it if it ends up being wrong.'"</p>
+                  <a href="#" style="text-decoration: none;">READ ARTICLE <img
+                      src="images/icons8-speed-forward-arrow-68.png" width="10px" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="card border-0 ">
+                <img src="images/news_gamesindustry.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title   fw-bold">Trust Games</h5>
+                  <p class="card-text  text-start ">It all starts from trust. If the team's working independently, it
+                    can't work without trust. That trust needs to be mutual. The management needs to trust their
+                    developers to make great games, but the developers also need to trust the management to have their
+                    backs. If developers are afraid of failing because there will be consequences, then they won't take
+                    risks.</p>
+                  <a href="#" style="text-decoration: none;">READ ARTICLE <img
+                      src="images/icons8-speed-forward-arrow-68.png" width="10px" alt=""></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card-wrapper d-flex ">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="card border-0 me-2">
+                <img src="images/news_gamesindustry.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title   fw-bold">Success and sustainability at Supercell</h5>
+                  <p class="card-text  text-start ">"Gaming is a creative business, and it's not about the hours you put
+                    in. Of course, sometimes you need to put in long hours, and the Brawl Stars team has been working
+                    super hard over the last two months. But that can't be the de facto way of working. Sometimes it can
+                    happen, but it can't be a rule. We're in a creative business and I just can't believe that people
+                    would come up with creative ideas if they're really, really tired or at risk of being burned out.”
+                  </p>
+                  <a href="#" style="text-decoration: none;">READ ARTICLE <img
+                      src="images/icons8-speed-forward-arrow-68.png" width="10px" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="card border-0 ">
+                <img src="images/news_theverge.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title   fw-bold">Brawl Stars is nearing its global launch</h5>
+                  <p class="card-text  text-start ">Development on Brawl Stars began around four years ago, and
+                    according to Jon Franzas, a designer and programmer who initially served as the project lead, it
+                    changed a lot over that time. “As a company we don’t have so much experience with this type of
+                    game,” Franzas explains. “So we wanted to launch it very early, in a very raw and unfinished state.”
+                  </p>
+                  <a href="#" style="text-decoration: none;">READ ARTICLE <img
+                      src="images/icons8-speed-forward-arrow-68.png" width="10px" alt=""></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="d-none d-md-block ">
+          <button class="carousel-control-prev  " type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon d" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+
+  <footer >
+    <br>
+    <div class="section1 ">
+      <div class="container ftcontainer  d-flex justify-content-between align-items-center  ">
+        <div class="socialmedia">
+          <h6 class="headings">Follow us on</h6>
+          <a href="#" class="me-2"><img src="images/icons8-facebook-30.png" alt="" width="20px"></a>
+          <a href="#" class="me-2"><img src="images/icons8-instagram-50.png" alt="" width="20px"></a>
+          <a href="#" class="me-2"><img src="images/icons8-twitter-50 (1).png" alt="" width="20px"></a>
+          <a href="#" class="me-2"><img src="images/icons8-linkedin-50.png" alt="" width="20px"></a>
+          <a href="#" class="me-2"><img src="images/icons8-youtube-50.png" alt="" width="20px"></a>
+          <a href="#"><img
+              src="images/icons8-glassdoor-a-website-where-current-and-former-employees-anonymously-review-companies-24.png"
+              alt=""></a>
+        </div>
+        <div class="store">
+          <img src="images/appstore.png" width="120px" height="50px" alt="">
+          <img src="images/googleplay.png" alt="" width="120px" height="50px">
+        </div>
+
+      </div>
+      <br>
+      <hr class="container" style="color: white; ">
+      <br>
+      <div class="container d-flex">
+        <h6 style=" color: white; font-size: 12px; " class="me-3 fw-bold ">Terms of service</h6>
+        <h6 style=" color: white; font-size: 12px; " class="me-3 fw-bold">Privacy Policy</h6>
+        <h6 style=" color: white; font-size: 12px; " class="me-3 fw-bold">Parent's Guide</h6>
+        <h6 style=" color: white; font-size: 12px; " class="me-3 fw-bold">Safe and Fair Play Policy</h6>
+        <h6 style=" color: white; font-size: 12px; " class="me-3 fw-bold">Other Legal Docs</h6>
+        <h6 style=" color: white; font-size: 12px; " class="me-3 fw-bold">For Media</h6>
+        <h6 style=" color: white; font-size: 12px; " class="me-3 fw-bold">Manage Cookies</h6>
+      </div>
+      <br>
+
+      <div class="container   d-flex justify-content-between   ">
+        <div class="addrs">
+          <pre>
+          Supercell Oy
+          Jätkäsaarenlaituri 1
+          00180 Helsinki
+          Finland
+        </pre>
+        </div>
+        <div class="companylogo">
+          <a class="navbar-brand" href="#">
+            <img src="images/supercell_logo.jpg" alt="" width="40" height="40">
+          </a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <!-- mobile section -->
+
+    <div class="section2 ">
+      <div class="container">
+        <div class="socialmedia">
+          <h6 class="fw-bold" style="font-size: 12px; color: white;">Follow us on</h6>
+          <a href="#" class="me-2"><img src="images/icons8-facebook-30.png" alt="" width="30px"></a>
+          <a href="#" class="me-2"><img src="images/icons8-instagram-50.png" alt="" width="30px"></a>
+          <a href="#" class="me-2"><img src="images/icons8-twitter-50 (1).png" alt="" width="30px"></a>
+          <a href="#" class="me-2"><img src="images/icons8-linkedin-50.png" alt="" width="30px"></a>
+          <a href="#" class="me-2"><img src="images/icons8-youtube-50.png" alt="" width="30px"></a>
+          <a href="#"><img
+              src="images/icons8-glassdoor-a-website-where-current-and-former-employees-anonymously-review-companies-24.png"
+              alt=""></a>
+        </div>
+        <hr class="container" style="color: white; ">
+      <h6 class="fw-bold" style="font-size: 12px; color: white;">Download our games from</h6>
+      <img src="images/appstore.png" width="120px" height="50px" alt="">
+          <img src="images/googleplay.png" alt="" width="120px" height="50px">
+      </div>
+      <hr class="container" style="color: white; ">
+      <br>
+      <div class="container mb-2">
+        <h6 style=" color: white; font-size: 14px; " class="mb-2">Terms of service</h6>
+        <h6 style=" color: white; font-size: 14px; " class="mb-2">Privacy Policy</h6>
+        <h6 style=" color: white; font-size: 14px; " class="mb-2">Parent's Guide</h6>
+        <h6 style=" color: white; font-size: 14px; " class="mb-2">Safe and Fair Play Policy</h6>
+        <h6 style=" color: white; font-size: 14px; " class="mb-2">Other Legal Docs</h6>
+        <h6 style=" color: white; font-size: 14px; " class="mb-2">For Media</h6>
+        <h6 style=" color: white; font-size: 14px; " class="mb-2">Manage Cookies</h6>
+      </div>
+      <div class="container   d-flex justify-content-between   ">
+        <div class="addrs">
+          <pre>
+          Supercell Oy
+          Jätkäsaarenlaituri 1
+          00180 Helsinki
+          Finland
+        </pre>
+        </div>
+        <div class="companylogo">
+          <a class="navbar-brand" href="#">
+            <img src="images/supercell_logo.jpg" alt="" width="40" height="40">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- footer end -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

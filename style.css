@@ -1,0 +1,170 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.container-md{
+    background-color: black;
+}
+
+.frontpage{
+    background-image: url(images/frontpage.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  
+}
+.nita{
+    background-image: url(images/bg_brawlstars.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.nita1{
+    background-color: #1f7aeb;
+}
+
+.color-overlay{
+    min-height: 90vh;
+}
+.navbar{
+   
+    background-color: black;
+}
+.aq{
+    margin-right: 1rem;
+}
+
+.tgler{
+    background-color: black;
+}
+ion-icon {
+    font-size: 35px;
+  }
+
+  .color-overlay p{
+    font-size: 15px;
+}
+.qwer{
+    font-size: 13px;
+    background: linear-gradient(90deg,#1f7aeb,#1f7aeb 44px,#2d85f3 0,#2d85f3);
+}
+
+.cardheading{
+    color: rgb(251, 74, 157);
+    font-size: 14px;
+}
+.text-container h3{
+font-size: 34px;
+}
+.carousel-control-next{
+    right: -6.5%;
+}
+.carousel-control-prev{
+    left: -6.5%;
+}
+.section1{
+    background-color: black;
+}
+.headings{
+    color: white;
+}
+.section2{
+    background-color: black;
+    display: none;
+}
+/* .cards-wrapper{
+    display: flex;
+}
+.sliding{
+    margin: 0.5em;
+    width: calc(100%/2); */
+
+ /* Extra Small Devices, Phones */ 
+ @media  screen and (max-width : 480px) {
+    .searchbtn{
+        display: none;
+    }
+    .navbar-nav{
+        display: none;
+    }
+ }
+ 
+ /* Small Devices, Tablets */
+ @media  screen and (max-width : 768px) {
+    .searchbtn{
+        display: none;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .section2{
+        display: block;
+    }
+    .section1{
+        display: none;
+    }
+ }
+ /* Medium Devices, Desktops */
+@media  screen and (max-width : 992px) {
+     .searchbtn{
+        display: none;
+    }
+    .navbar-nav{
+        display: none;
+    }
+}
+
+@media  screen and (min-width : 992px)and (max-width:2000px) {
+    .navdop{
+        display: none;
+    }
+    .mobileicons{
+        display: none;
+    }
+    
+}
+/* tab */
+@media screen and (min-width : 992px)and (max-width : 1275px){
+    .color-overlay h1{
+        font-size: 34px;
+    }
+    .color-overlay p{
+        font-size: 18px;
+    }
+    .frontpage{
+        background-image: url(images/frontpage_hero1245.jpg);
+    }
+}
+/* mobile */
+@media screen and (max-width : 789px){
+    .color-overlay h1{
+        font-size: 30px;
+        
+    }
+    .frontpage{
+        background-image: url(images/frontpage_hero_mobile..jpg);
+    }
+    .color-overlay p{
+        font-size: 13px;
+    }
+    
+}
+
+ @media  screen and (min-width : 50px)and (max-width : 768px) {
+    .rand{
+        justify-content: center;
+    }
+    .nitarow h3,p{
+        text-align: center;
+    }
+    .nitarow2 h3,p{
+        text-align: center;
+    }
+    .nitarow2{
+        flex-direction: column-reverse;
+    }
+} 
+
